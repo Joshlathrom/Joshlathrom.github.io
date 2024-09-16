@@ -1,86 +1,80 @@
-
-nav ul {
-    list-style-type: none;
+/* Reset default margin and padding */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+/* Style the navigation bar */
+nav {
+    background-color: #333; /* Dark background color for the nav bar */
+    padding: 10px 0; /* Add some padding */
+}
 
+/* Style the navigation list */
+nav ul {
+    list-style-type: none; /* Remove bullets */
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center items horizontally */
+}
+
+/* Style the navigation list items */
 nav ul li {
-    display: inline-block; 
-    margin-right: 15px; 
-    position: relative; 
+    position: relative; /* Needed for dropdown positioning */
+    margin: 0 15px; /* Space between menu items */
 }
 
+/* Style the navigation links */
 nav ul li a {
-    text-decoration: none;
-    padding: 5px 10px;
-    border: 1px solid #333;
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    padding: 8px 15px; /* Add padding */
+    display: block; /* Make links fill the li element */
 }
 
+/* Change link color on hover */
+nav ul li a:hover {
+    background-color: #555; /* Darker background on hover */
+    border-radius: 4px; /* Optional rounded corners */
+}
 
+/* Style the dropdown menu */
 nav ul li ul {
-    display: none; 
-    position: absolute; 
-    top: 100%; 
-    left: 0;
-    list-style-type: none;
-    padding: 0;
+    display: none; /* Hide the dropdown by default */
+    position: absolute; /* Position dropdown relative to parent */
+    top: 100%; /* Position below the parent item */
+    left: 0; /* Align with the parent item */
+    background-color: #333; /* Same background as the nav bar */
+    padding: 0; /* Remove padding */
+    list-style: none; /* Remove bullets */
+    min-width: 150px; /* Set a minimum width for the dropdown */
 }
 
-
-nav ul li:hover ul {
-    display: block; 
-}
-
+/* Style the dropdown list items */
 nav ul li ul li {
-    display: block; 
+    width: 100%; /* Ensure dropdown items take full width */
 }
 
+/* Show the dropdown menu on hover */
+nav ul li:hover ul {
+    display: block; /* Show the dropdown on hover */
+}
+
+/* Style the dropdown links */
 nav ul li ul li a {
-    padding: 5px 10px;
-    display: block;
-    border-top: 1px solid #333;
-
+    padding: 10px; /* Add padding */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Make links fill the li element */
 }
 
-/* Basic nav styling */
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+/* Change dropdown link color on hover */
+nav ul li ul li a:hover {
+    background-color: #555; /* Darker background on hover */
+    border-radius: 0; /* Optional rounded corners */
 }
 
-nav ul li {
-    position: relative; 
-    display: inline-block; 
-
-nav ul li a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    background-color: #333;
-    color: white; 
-}
-
-
-nav ul .dropdown {
-    display: none; 
-    position: absolute; 
-    top: 100%;
-    left: 0;
-    min-width: 160px;
-    background-color: #333; 
-    z-index: 1;
-}
-
-
-nav ul .dropdown li a {
-    padding: 10px;
-    display: block;
-}
-
-
-nav ul li:hover .dropdown {
-    display: block; 
+/* Add some margin to the content area to prevent overlap */
+.content {
+    margin-top: 20px; /* Adjust the margin-top value as needed */
 }
