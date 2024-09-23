@@ -3,13 +3,13 @@ body {
     font-family: Arial, Helvetica;
     margin: 0;
     padding: 0;
-    background-color: #f7f5e6;
+    background-color: white;
     color: #52658f;
 }
 
 
 header {
-    background-color: #f7f5e6;
+    background-color: white;
     color: #333a56;
     padding: 10px 0;
     text-align: center;
@@ -37,10 +37,20 @@ footer {
 
 
 a {
-    color: #0066cc;
+    color: white;
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 40px) {
+    main {
+        flex-direction: column; 
+        align-items: center; }
+
+    .image-container {
+        margin-bottom: 20px; 
+    }
 }
