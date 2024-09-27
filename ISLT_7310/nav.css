@@ -7,7 +7,7 @@
 
 /* Style the navigation bar */
 nav {
-    background-color: #333; /* Dark background color for the nav bar */
+    background-color: #52658f; /* Dark background color for the nav bar */
     padding: 10px 0; /* Add some padding */
 }
 
@@ -26,7 +26,7 @@ nav ul li {
 
 /* Style the navigation links */
 nav ul li a {
-    color: white; /* Text color */
+    color: f7f5e6; /* Text color */
     text-decoration: none; /* Remove underline */
     padding: 8px 15px; /* Add padding */
     display: block; /* Make links fill the li element */
@@ -34,7 +34,7 @@ nav ul li a {
 
 /* Change link color on hover */
 nav ul li a:hover {
-    background-color: #555; /* Darker background on hover */
+    background-color: #52658f; /* Darker background on hover */
     border-radius: 4px; /* Optional rounded corners */
 }
 
@@ -44,7 +44,7 @@ nav ul li ul {
     position: absolute; /* Position dropdown relative to parent */
     top: 100%; /* Position below the parent item */
     left: 0; /* Align with the parent item */
-    background-color: #333; /* Same background as the nav bar */
+    background-color: #52658f; /* Same background as the nav bar */
     padding: 0; /* Remove padding */
     list-style: none; /* Remove bullets */
     min-width: 150px; /* Set a minimum width for the dropdown */
