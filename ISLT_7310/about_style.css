@@ -19,7 +19,7 @@ header {
 }
 
 main {
-    padding: 20px;
+    padding: 10px;
     max-width: 800px;
     margin: 20px auto;
     background-color: white;
@@ -61,10 +61,10 @@ footer {
 }
 
 .contact-info img.icon:hover {
-    transform: scale(1.5); /* Enlarge icon on hover */
+    transform: scale(1.5);  
 }
 
-/* Links */
+ 
 a {
     color: white;
     text-decoration: none;
@@ -76,8 +76,8 @@ a:hover {
 
 @media (max-width: 600px) {
     main {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        align-items: bottom;
     }
 
     .image-container {
@@ -87,4 +87,23 @@ a:hover {
     .contact-info {
         flex-direction: column;
     }
+}
+ 
+.video-flex-container {
+    display: flex;
+    justify-content: bottom;  
+    align-items: bottom;  
+    margin-top: 400px; 
+}
+
+ 
+.video-box {
+    max-width: 200%;  
+    flex: 1;
+    padding: 10px;  
+}
+
+iframe {
+    max-width: 100%;  
+    height: auto;
 }
