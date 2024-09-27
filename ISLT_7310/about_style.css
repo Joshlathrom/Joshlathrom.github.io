@@ -1,4 +1,4 @@
-/* about_style.css */
+ 
 body {
     font-family: Arial, Helvetica;
     margin: 0;
@@ -28,14 +28,14 @@ main {
     flex-grow: 1;
 }
 
-/* Footer styling */
+ 
 footer {
-    background-image: url('footer_background.png'); /* Path to your background image */
-    background-size: cover; /* Ensures the image covers the entire footer */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    padding: 20px; /* Adds some padding to the footer for content */
-    color: white; /* Ensures text is visible if the image is dark */
+    background-image: url('footer_background.png');  
+    background-size: cover;  
+    background-position: center;  
+    background-repeat: no-repeat;  
+    padding: 20px;  
+    color: white;  
 }
 
 .footer-content {
@@ -104,4 +104,32 @@ a:hover {
 iframe {
     max-width: 100%;  
     height: auto;
+}
+ 
+@media print {
+     
+    nav, footer, .image-container, .video-flex-container {
+        display: none;
+    }
+
+     
+    body, main {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 12pt;  
+        background: none;  
+    }
+
+     
+    .text-content {
+        margin: 0;
+        padding: 10px;
+    }
+
+    
+    a {
+        color: black; 
+        text-decoration: underline;
+    }
 }
