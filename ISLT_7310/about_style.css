@@ -1,3 +1,4 @@
+/* about_style.css */
 body {
     font-family: Arial, Helvetica;
     margin: 0;
@@ -27,16 +28,43 @@ main {
     flex-grow: 1;
 }
 
+/* Footer styling */
 footer {
-    background-image: url('assets/images/footer-background.jpg'); /* Path to your image */
+    background-image: url('assets/images/footer-background.jpg'); /* Replace with your image path */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     padding: 20px;
+    background-color: #333a56;
     color: white;
     text-align: center;
 }
 
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-info img.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.contact-info img.icon:hover {
+    transform: scale(1.5); /* Enlarge icon on hover */
+}
+
+/* Links */
 a {
     color: white;
     text-decoration: none;
@@ -54,5 +82,9 @@ a:hover {
 
     .image-container {
         margin-bottom: 20px;
+    }
+
+    .contact-info {
+        flex-direction: column;
     }
 }
