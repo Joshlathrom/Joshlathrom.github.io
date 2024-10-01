@@ -1,4 +1,3 @@
- 
 body {
     font-family: Arial, Helvetica;
     margin: 0;
@@ -28,9 +27,7 @@ main {
     flex-grow: 1;
 }
 
-
-
-
+/* Contact Info Styles */
 .contact-info {
     display: flex;
     justify-content: center;
@@ -49,7 +46,7 @@ main {
     transform: scale(1.5);  
 }
 
- 
+/* Link Styles */
 a {
     color: white;
     text-decoration: none;
@@ -59,21 +56,7 @@ a:hover {
     text-decoration: underline;
 }
 
-@media (max-width: 600px) {
-    main {
-        flex-direction: row;
-        align-items: bottom;
-    }
-
-    .image-container {
-        margin-bottom: 20px;
-    }
-
-    .contact-info {
-        flex-direction: column;
-    }
-}
- 
+/* Video Flexbox Styling */
 .video-flex-container {
     display: flex;
     justify-content: bottom;  
@@ -81,7 +64,6 @@ a:hover {
     margin-top: 400px; 
 }
 
- 
 .video-box {
     max-width: 200%;  
     flex: 1;
@@ -92,34 +74,86 @@ iframe {
     max-width: 100%;  
     height: auto;
 }
- 
+
+/* Content Alternating Layout */
+.content-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.content-block img {
+    width: 20%; /* Adjust as needed */
+    height: auto;
+    border-radius: 8px;
+}
+
+.text-content {
+    width: 75%;
+    padding: 10px;
+}
+
+.left-image {
+    flex-direction: row; /* Image on the left, text on the right */
+}
+
+.right-image {
+    flex-direction: row-reverse; /* Image on the right, text on the left */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container {
+        margin-bottom: 20px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+    }
+
+    .content-block {
+        flex-direction: column;
+    }
+
+    .content-block img, 
+    .text-content {
+        width: 100%;
+    }
+}
+
+/* Print Styles */
 @media print {
-     
     nav, footer, .image-container, .video-flex-container {
         display: none;
     }
 
-     
     body, main {
         width: 100%;
         margin: 0;
         padding: 0;
-        font-size: 12pt;  
-        background: none;  
+        font-size: 12pt;
+        background: none;
     }
 
-     
     .text-content {
         margin: 0;
         padding: 10px;
     }
 
-    
     a {
         color: black; 
         text-decoration: underline;
     }
 }
+
+/* Footer Styles */
 footer {
     background-image: url('footer_background.png');  
     background-size: cover;  
