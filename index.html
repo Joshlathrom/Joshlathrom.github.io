@@ -2,9 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home Page</title>
+    <title>Glad Your Here!</title>
     <link rel="stylesheet" href="style.css"> 
-    <link rel="stylesheet" href="nav.css"> 
+    <link rel="stylesheet" href="index_nav.css"> 
+    <style>
+        img {
+            width: 45%; /* Shrink the image to 300px wide */
+            height: auto; /* Maintain the aspect ratio */
+        }
+    </style>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
     <!--
 
     *****************************************************************************
@@ -23,27 +33,42 @@
 </head>
 <body>
     
-    <!-- Navigation bar -->
+    
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="about_page.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="personal-statement.html">Personal Statement</a></li>
+            <li><a href="projects.html">Certifications/Experience</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
     
     <header>
-        <h1>Home Page</h1>
+        <h1>Glad Your Here!</h1>
     </header>
 
     <main>
-        <h2>Glad You're Here!</h2>
+        
+        <div class="image-container">
+            <img src="dog.jpg" alt="dog picture" class="second"> 
+            <img src="profilepicmizzou.JPG" alt="sitting picture"> 
+        </div>
+        
         <p>Welcome to my professional webpage, where you can explore a comprehensive overview of my academic and professional achievements, experiences, and certifications. Unlike a traditional resume, this platform offers an in-depth look at my skills and accomplishments, providing a fuller picture of my qualifications and career journey. Here, you’ll find detailed information that goes beyond the confines of a 1-2 page resume, showcasing how my background and expertise align with my professional goals.</p>
     </main>
 
     <footer>
-        If you have any questions feel free to reach out! - JJLMVQ@umsystem.edu<br>
-        © 2024 Josh Lathrom. All rights reserved.
+        <div class="footer-content">
+            
+            <div class="contact-info">
+                <img src="phone-icon.png" alt="Phone Icon" class="icon">
+                <span>(123) 456-7890</span>
+                <img src="mail-icon.png" alt="Email Icon" class="icon">
+                <span>JJLMVQ@umsystem.edu</span>
+            </div>
+            <p>© 2024 Josh Lathrom. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
