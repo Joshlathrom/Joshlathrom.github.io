@@ -34,19 +34,33 @@
     </header>
     
     <main>
-        <div class="contact-container">
-            <div class="contact-image">
-                <img src="Insert_img.jpeg" alt="Profile Picture">
-            </div>
-            <div class="contact-details">
-                <h2>Contact Information</h2>
-                <p>Email: <a href="mailto:JJLMVQ@umsystem.edu">JJLMVQ@umsystem.edu</a></p><p>JJLMVQ@umsystem.edu</p>
-                <p>Phone: <a href="tel:+14793356210">(479) 335-6210</a></p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/josh-lathrom-b692a3311/" target="_blank">linkedin.com/in/josh-lathrom</a></p>
-                <p>Resume: <a href="Finished Resume .pdf" download>Download PDF</a></p>
-                <p>Github: <a href="https://github.com/Joshlathrom" target="https://github.com/Joshlathrom">linkedin.com/in/josh-lathrom</a></p>
-            </div>
+        <div class="contact-details">
+            <h2>Contact Information</h2>
+            <p style="color: #000000;">Email: <a href="mailto:JJLMVQ@umsystem.edu" style="color: #52658f;">JJLMVQ@umsystem.edu</a></p>
+            <p style="color: #000000;">Phone: <a href="tel:+14793356210" style="color: #52658f;">(479) 335-6210</a></p>
+            <p style="color: #000000;">LinkedIn: <a href="https://www.linkedin.com/in/josh-lathrom-b692a3311/" target="_blank" style="color: #52658f;">LinkedIn</a></p>
+            <p style="color: #000000;">Resume: <a href="Finished Resume.pdf" download style="color: #52658f;">Download PDF</a></p>
+            <p style="color: #000000;">Github: <a href="https://github.com/Joshlathrom" target="_blank" style="color: #52658f;">GitHub</a></p>
         </div>
+        </div>
+        
+        
+        <h2>Contact Me</h2>
+        <form action="mailto:JJLMVQ@umsystem.edu" method="post" enctype="text/plain">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+            
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
+    
+            <button type="submit">Send</button>
+        </form>
     </main>
     
     <footer>
