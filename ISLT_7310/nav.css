@@ -1,80 +1,80 @@
-/* Reset default margin and padding */
+ 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Style the navigation bar */
+ 
 nav {
-    background-color: #52658f; /* Dark background color for the nav bar */
-    padding: 10px 0; /* Add some padding */
+    background-color: #52658f;  
+    padding: 10px 0;  
 }
 
-/* Style the navigation list */
+ 
 nav ul {
-    list-style-type: none; /* Remove bullets */
-    display: flex; /* Use flexbox for horizontal layout */
-    justify-content: center; /* Center items horizontally */
+    list-style-type: none;  
+    display: flex;  
+    justify-content: center; 
 }
 
-/* Style the navigation list items */
+ 
 nav ul li {
-    position: relative; /* Needed for dropdown positioning */
-    margin: 0 15px; /* Space between menu items */
+    position: relative;  
+    margin: 0 15px;  
 }
 
-/* Style the navigation links */
+ 
 nav ul li a {
-    color: f7f5e6; /* Text color */
-    text-decoration: none; /* Remove underline */
-    padding: 8px 15px; /* Add padding */
-    display: block; /* Make links fill the li element */
+    color: f7f5e6;  
+    text-decoration: none;  
+    padding: 8px 15px;  
+    display: block;  
 }
 
-/* Change link color on hover */
+ 
 nav ul li a:hover {
-    background-color: #52658f; /* Darker background on hover */
-    border-radius: 4px; /* Optional rounded corners */
+    background-color: #52658f;  
+    border-radius: 4px;  
 }
 
-/* Style the dropdown menu */
+ 
 nav ul li ul {
-    display: none; /* Hide the dropdown by default */
-    position: absolute; /* Position dropdown relative to parent */
-    top: 100%; /* Position below the parent item */
-    left: 0; /* Align with the parent item */
-    background-color: #52658f; /* Same background as the nav bar */
-    padding: 0; /* Remove padding */
-    list-style: none; /* Remove bullets */
-    min-width: 150px; /* Set a minimum width for the dropdown */
+    display: none;  
+    position: absolute;  
+    top: 100%;  
+    left: 0; 
+    background-color: #52658f;  
+    padding: 0;  
+    list-style: none;  
+    min-width: 150px;  
 }
 
-/* Style the dropdown list items */
+ 
 nav ul li ul li {
-    width: 100%; /* Ensure dropdown items take full width */
+    width: 100%;  
 }
 
-/* Show the dropdown menu on hover */
+ 
 nav ul li:hover ul {
-    display: block; /* Show the dropdown on hover */
+    display: block;  
 }
 
-/* Style the dropdown links */
+ 
 nav ul li ul li a {
-    padding: 10px; /* Add padding */
-    color: white; /* Text color */
-    text-decoration: none; /* Remove underline */
-    display: block; /* Make links fill the li element */
+    padding: 10px;  
+    color: white;  
+    text-decoration: none;  
+    display: block;  
 }
 
-/* Change dropdown link color on hover */
+ 
 nav ul li ul li a:hover {
-    background-color: #555; /* Darker background on hover */
-    border-radius: 0; /* Optional rounded corners */
+    background-color: #555;  
+    border-radius: 0;  
 }
 
-/* Add some margin to the content area to prevent overlap */
+ 
 .content {
-    margin-top: 20px; /* Adjust the margin-top value as needed */
+    margin-top: 20px;  
 }
