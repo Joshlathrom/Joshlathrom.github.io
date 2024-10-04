@@ -1,4 +1,3 @@
- 
 body {
     font-family: Arial, Helvetica;
     margin: 0;
@@ -103,7 +102,7 @@ a:hover {
 
 iframe {
     max-width: 100%;  
-    height: auto;
+    
 }
  
 @media print {
@@ -131,5 +130,56 @@ iframe {
     a {
         color: black; 
         text-decoration: underline;
+    }
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+textarea {
+    height: 150px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #52658f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333a56;
+}
+
+
+@media (max-width: 600px) {
+    form {
+        padding: 10px;
     }
 }
