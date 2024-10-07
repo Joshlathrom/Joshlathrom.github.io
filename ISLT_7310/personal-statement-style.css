@@ -133,3 +133,13 @@ iframe {
         text-decoration: underline;
     }
 }
+.centered-content {
+    max-width: 800px;  
+    margin: 100px auto;  
+    padding: 20px;  
+    text-align: center;  
+    border: 2px solid #ddd;  
+    background-color: white;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+    line-height: 1.6;  
+}
